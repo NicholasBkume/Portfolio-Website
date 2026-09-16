@@ -1,46 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nicholas Kume — Full-Stack Software Engineer building scalable web applications, cloud systems, and AI-powered products.">
-  <meta name="theme-color" content="#07111f">
-  <title>Nicholas Kume | Full-Stack Software Engineer</title>
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./media.css">
-  <link rel="stylesheet" href="./modern.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Kume | Fullstack Developer</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav id="desktop-nav" class="nav-shell" aria-label="Primary navigation">
-      <a class="logo" href="#profile">NK<span>.</span></a>
-      <ul class="nav-links"><li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul>
-      <a class="nav-cta" href="./assets/NKume-software-developer-resume-5.docx" target="_blank" rel="noopener">Resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <nav id="desktop-nav">
+        <div class="logo"><a href="#profile">Nicholas Kume</a></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-    <nav id="hamburger-nav" aria-label="Mobile navigation">
-      <a class="logo" href="#profile">NK<span>.</span></a>
-      <button class="hamburger-icon" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleMenu()"><span></span><span></span><span></span></button>
-      <div class="menu-backdrop"></div>
-      <ul class="menu-links"><li><a href="#about" onclick="toggleMenu()">About</a></li><li><a href="#experience" onclick="toggleMenu()">Experience</a></li><li><a href="#projects" onclick="toggleMenu()">Projects</a></li><li><a href="#contact" onclick="toggleMenu()">Contact</a></li><li><a href="./assets/NKume-software-developer-resume-5.docx" target="_blank" rel="noopener">Resume</a></li></ul>
+    <nav id="hamburger-nav">
+        <div class="logo">Nicholas Kume</div>
+        <button class="hamburger-icon" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+        <div class="menu-backdrop"></div>
+        <ul class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
     </nav>
-  </header>
-  <main>
-    <section id="profile" class="hero section-shell">
-      <div class="hero-copy"><p class="eyebrow">FULL-STACK SOFTWARE ENGINEER</p><h1>Nicholas<br><span>Kume</span></h1><p class="hero-lede">I build scalable web applications, cloud-backed systems, and AI-powered products with a focus on clean architecture and polished user experiences.</p><div class="hero-actions"><a class="btn btn-primary" href="#projects">View my work <i class="fa-solid fa-arrow-down"></i></a><a class="btn btn-ghost" href="./assets/NKume-software-developer-resume-5.docx" target="_blank" rel="noopener">Download resume</a></div><div class="social-row" aria-label="Social links"><a href="https://github.com/NicholasBkume" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/in/nkume684/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="mailto:burinicholas@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></div></div>
-      <div class="hero-visual"><div class="hero-grid"></div><div class="profile-card"><div class="profile-card-top"><span class="status-dot"></span> AVAILABLE FOR OPPORTUNITIES</div><img src="./assets/nick_pic-modified.png" alt="Nicholas Kume"><div class="profile-card-bottom"><span>React</span><span>Node.js</span><span>AWS</span><span>AI</span></div></div></div>
+    <section id="profile">
+        <div class="profile-container">
+            <div class="section-pic-container"><img src="./assets/nick_pic-modified.png" alt="Nicholas Kume Profile Picture"></div>
+            <div class="section-text">
+                <p class="section-text-p1">Hello, I'm</p>
+                <h1 class="title">Nicholas Kume</h1>
+                <p class="section-text-p2">Fullstack Developer | Cloud Engineer</p>
+                <div class="btn-container">
+                    <a href="./assets/NKume-software-developer-resume-5.docx" class="btn btn-primary" target="_blank">Download CV</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div id="socials-container">
+                    <a href="https://www.linkedin.com/in/nkume684/" target="_blank" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/NicholasBkume" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/nkume684" target="_blank" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="about" class="section-shell section-block"><div class="section-heading"><p class="eyebrow">01 / ABOUT</p><h2>Engineering with<br><span>purpose.</span></h2></div><div class="about-grid"><div class="about-copy"><p class="lead">I'm a full-stack developer focused on turning ideas into reliable, production-minded software.</p><p>I enjoy working across the stack—from responsive interfaces and API design to databases, cloud infrastructure, authentication, payments, and application security. My projects emphasize real workflows rather than isolated demos.</p><p>My goal is simple: ship software that is useful, maintainable, and genuinely enjoyable to use.</p></div><div class="tech-panel"><p class="panel-label">CORE TOOLKIT</p><div class="tech-cloud"><span>React</span><span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>Python</span><span>PostgreSQL</span><span>MongoDB</span><span>Redis</span><span>AWS</span><span>Docker</span><span>GraphQL</span><span>Stripe</span><span>Git</span><span>AI</span></div></div></div></section>
-    <section id="experience" class="section-shell section-block dark-section"><div class="section-heading"><p class="eyebrow">02 / EXPERIENCE</p><h2>From interfaces<br>to <span>infrastructure.</span></h2></div><div class="experience-list"><article class="experience-item"><div class="experience-number">01</div><div><h3>Frontend Engineering</h3><p>React, JavaScript/TypeScript, responsive UI, state management, API integration, and accessible component-driven interfaces.</p></div><div class="experience-tags"><span>React</span><span>TypeScript</span><span>UI/UX</span></div></article><article class="experience-item"><div class="experience-number">02</div><div><h3>Backend & APIs</h3><p>Node.js and Express services, REST/GraphQL APIs, authentication, authorization, validation, database design, and production workflows.</p></div><div class="experience-tags"><span>Node.js</span><span>PostgreSQL</span><span>MongoDB</span></div></article><article class="experience-item"><div class="experience-number">03</div><div><h3>Cloud & Production</h3><p>AWS infrastructure, deployment, caching, security, CI/CD concepts, containerized services, observability, and performance-minded architecture.</p></div><div class="experience-tags"><span>AWS</span><span>Docker</span><span>Redis</span></div></article></div></section>
-    <section id="projects" class="section-shell section-block"><div class="projects-heading"><div class="section-heading"><p class="eyebrow">03 / SELECTED WORK</p><h2>Projects that show<br><span>how I build.</span></h2></div><p>Production-minded applications spanning e-commerce, inventory systems, and AI-powered experiences.</p></div><div class="projects-container">
-      <article class="project-card project-featured"><div class="project-image"><img src="./assets/NFT.png" alt="Thread Theory Store"></div><div class="project-info"><div class="project-meta"><span>01</span><span>E-COMMERCE / FULL STACK</span></div><h3>Thread Theory Store</h3><p>A production-style fashion commerce platform with authentication, cart and coupon workflows, Stripe checkout, verified webhooks, product administration, analytics, Redis caching, and Cloudinary media management.</p><div class="stack"><span>React</span><span>Express</span><span>MongoDB</span><span>Redis</span><span>Stripe</span></div><div class="project-links"><a href="https://github.com/NicholasBkume/thread-theory-store" target="_blank" rel="noopener" class="btn btn-small">GitHub <i class="fa-brands fa-github"></i></a><a href="https://threadtheorystore.onrender.com/" target="_blank" rel="noopener" class="btn btn-small btn-primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></article>
-      <article class="project-card"><div class="project-image"><img src="./assets/programming.jpg" alt="Nutriforce AI Voice Chat"></div><div class="project-info"><div class="project-meta"><span>02</span><span>AI / NEXT.JS</span></div><h3>Nutriforce AI Voice Chat</h3><p>An AI-focused web experience built with Next.js, showcasing modern application architecture and an interactive voice-chat product direction.</p><div class="stack"><span>Next.js</span><span>React</span><span>AI</span><span>Vercel</span></div><div class="project-links"><a href="https://github.com/NicholasBkume/codeng4l-ai" target="_blank" rel="noopener" class="btn btn-small">GitHub <i class="fa-brands fa-github"></i></a><a href="https://codeng4l-ai.vercel.app/" target="_blank" rel="noopener" class="btn btn-small btn-primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></article>
-      <article class="project-card"><div class="project-image"><img src="./assets/product.png" alt="Computer Product Store"></div><div class="project-info"><div class="project-meta"><span>03</span><span>INVENTORY / PERN</span></div><h3>Computer Product Store</h3><p>A full-stack inventory platform with PostgreSQL through Neon, Express APIs, React/Vite UI, complete CRUD workflows, responsive themes, notifications, and Arcjet API security.</p><div class="stack"><span>React</span><span>Express</span><span>PostgreSQL</span><span>Arcjet</span></div><div class="project-links"><a href="https://github.com/NicholasBkume/Computer-Product-Store" target="_blank" rel="noopener" class="btn btn-small">GitHub <i class="fa-brands fa-github"></i></a><a href="https://computer-product-store.onrender.com/" target="_blank" rel="noopener" class="btn btn-small btn-primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></article>
-      <article class="project-card compact-project"><div class="project-image"><img src="./assets/Keeper.png" alt="Keeper App"></div><div class="project-info"><div class="project-meta"><span>04</span><span>REACT / CRUD</span></div><h3>Keeper App</h3><p>A focused React note-taking application demonstrating state management, CRUD operations, and local persistence.</p><div class="stack"><span>React</span><span>JavaScript</span><span>Local Storage</span></div><div class="project-links"><a href="https://github.com/NicholasBkume/ReactJS-projects" target="_blank" rel="noopener" class="btn btn-small">GitHub <i class="fa-brands fa-github"></i></a><a href="https://mkmx4v.csb.app/" target="_blank" rel="noopener" class="btn btn-small btn-primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></article>
-    </div></section>
-    <section id="contact" class="section-shell contact-section"><p class="eyebrow">04 / CONTACT</p><h2>Let's build something<br><span>worth shipping.</span></h2><p class="contact-lede">Have a software, cloud, or AI project in mind? I'm open to conversations about engineering opportunities and interesting problems.</p><div class="contact-actions"><a class="btn btn-primary" href="mailto:burinicholas@gmail.com">Get in touch <i class="fa-solid fa-arrow-right"></i></a><a class="btn btn-ghost dark-ghost" href="https://www.linkedin.com/in/nkume684/" target="_blank" rel="noopener">LinkedIn</a><a class="btn btn-ghost dark-ghost" href="https://github.com/NicholasBkume" target="_blank" rel="noopener">GitHub</a></div><p class="email-line">burinicholas@gmail.com</p></section>
-  </main>
-  <footer><p>© 2026 Nicholas Kume</p><p>Full-Stack Software Engineer</p></footer>
-  <script src="./index.js" defer></script>
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <p class="section-text-p1">Passionate about creating solutions that make a difference</p>
+        <div class="about-container">
+            <div class="text-container">
+                <p class="intro-text">Hi there! I'm a full-stack developer who thrives on building scalable, user-friendly web applications. My expertise spans from front-end development to back-end architecture, and I’m driven by a passion for solving complex problems and delivering high-impact solutions.</p>
+                <p class="skills-text">Technologies I work with:</p>
+                <ul class="skills-list">
+                    <li>Frontend: HTML, CSS, JavaScript, React, Next.js</li>
+                    <li>Backend: Node.js, Express, GraphQL</li>
+                    <li>Databases: PostgreSQL, MySQL, MongoDB</li>
+                    <li>Cloud: AWS, EC2, S3, Lambda</li>
+                    <li>Version Control: Git, GitHub, GitLab</li>
+                </ul>
+                <p class="work-philosophy-text">I believe in delivering clean, efficient code and working collaboratively to bring creative ideas to life. Whether it’s developing a complex API or designing a seamless UI, my goal is to always create meaningful experiences that users love.</p>
+            </div>
+            <div class="about-pic-container"><img class="about-pic" src="./assets/education.jpg" alt="Nicholas Kume education"></div>
+        </div>
+    </section>
+    <section id="experience">
+        <h1 class="title">My Professional Experience</h1>
+        <p class="section-description">Over the years, I've honed my skills in both frontend and backend development, working with various technologies to create scalable, dynamic web applications. Here’s a glimpse into the key areas I specialize in:</p>
+        <div class="experience-container">
+            <div class="experience-card"><div class="experience-header"><h2>Frontend Development</h2><p class="role-duration">2+ years of experience</p></div><ul class="skills-list"><li>React.js (Building interactive UIs)</li><li>JavaScript (ES6+), TypeScript</li><li>CSS, Sass, SCSS (for responsive layouts)</li><li>Responsive UI/UX Design & Cross-browser compatibility</li><li>API Integration & State Management (Redux, Context API)</li></ul><p class="card-footer">Building seamless, user-centric experiences with modern tools.</p></div>
+            <div class="experience-card"><div class="experience-header"><h2>Backend Development</h2><p class="role-duration">3+ years of experience</p></div><ul class="skills-list"><li>Node.js & Express.js (Server-side logic)</li><li>Databases: PostgreSQL, MySQL, MongoDB</li><li>Cloud Services: AWS (EC2, Lambda, S3)</li><li>API Development (RESTful & GraphQL)</li><li>Authentication & Authorization (JWT, OAuth)</li></ul><p class="card-footer">Building scalable, efficient backends with a focus on performance.</p></div>
+        </div>
+    </section>
+    <section id="projects">
+        <h1 class="title">My Projects</h1>
+        <p class="section-description">Here are some of the projects I’ve worked on. These projects demonstrate my skills in full-stack development, UI/UX design, security, and problem-solving. Feel free to explore the live demos and check out the source code on GitHub!</p>
+        <div class="projects-container">
+            <div class="project-card"><div class="project-image"><img src="./assets/Keeper.png" alt="Keeper App"></div><div class="project-info"><h2>Keeper App</h2><p class="project-description">A simple note-keeping application built with React. This project uses local storage to save notes, and features CRUD operations for adding, editing, and deleting notes.</p><div class="project-links"><a href="https://github.com/NicholasBkume/ReactJS-projects" target="_blank" class="btn">GitHub</a><a href="https://mkmx4v.csb.app/" target="_blank" class="btn">Live Demo</a></div></div></div>
+            <div class="project-card"><div class="project-image"><img src="./assets/NFT.png" alt="Thread Theory Store"></div><div class="project-info"><h2>Thread Theory Store</h2><p class="project-description">A production-style full-stack fashion e-commerce platform built with React, Express, MongoDB, Redis, Stripe, and Cloudinary. It includes authentication, shopping cart and coupon workflows, secure checkout, verified Stripe webhooks, product administration, analytics, and caching.</p><div class="project-links"><a href="https://github.com/NicholasBkume/thread-theory-store" target="_blank" class="btn">GitHub</a><a href="https://threadtheorystore.onrender.com/" target="_blank" class="btn">Live Demo</a></div></div></div>
+            <div class="project-card"><div class="project-image"><img src="./assets/product.png" alt="Computer Product Store"></div><div class="project-info"><h2>Computer Product Store</h2><p class="project-description">A full-stack computer product inventory application built with React, Vite, Express, PostgreSQL through Neon, and Arcjet. The application supports product creation, browsing, details, updates, deletion, responsive UI, theme support, toast notifications, and API security.</p><div class="project-links"><a href="https://github.com/NicholasBkume/Computer-Product-Store" target="_blank" class="btn">GitHub</a><a href="https://computer-product-store.onrender.com/" target="_blank" class="btn">Live Demo</a></div></div></div>
+            <div class="project-card"><div class="project-image"><img src="./assets/programming.jpg" alt="Nutriforce AI Voice Chat"></div><div class="project-info"><h2>Nutriforce AI Voice Chat</h2><p class="project-description">An AI-focused web application built with Next.js. This project demonstrates modern full-stack web development using the Next.js framework and its application architecture.</p><div class="project-links"><a href="https://github.com/NicholasBkume/codeng4l-ai" target="_blank" class="btn">GitHub</a><a href="https://codeng4l-ai.vercel.app/" target="_blank" class="btn">Live Demo</a></div></div></div>
+        </div>
+    </section>
+    <section id="contact"><h1 class="title">Contact Me</h1><p>Let's work together! Feel free to reach out.</p><div class="contact-info"><a href="mailto:burinicholas@gmail.com"><i class="fa-solid fa-envelope"></i> burinicholas@gmail.com</a><a href="https://www.linkedin.com/in/nkume684/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></div></section>
+    <footer><p>&copy; 2024 Nicholas Kume. All rights reserved.</p></footer>
+    <script src="./index.js" defer></script>
 </body>
 </html>
